@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssignmentSides — For Students, By Students</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">📝</span>
+      <span class="logo-text">AssignmentSides</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+    </ul>
+    <div class="nav-btns">
+      <a href="#" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary">Sign Up Free</a>
+    </div>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">🎓 Made for college students</div>
+      <h1 class="hero-heading">
+        Hey Champs 👀
+        <span class="hero-sub">Turn your laziness into someone else's income.</span>
+      </h1>
+      <p class="hero-desc">
+        Too lazy to write assignments? <strong>Find someone who'll do it for you.</strong><br/>
+        Good at writing assignments? <strong>Get paid for every page you complete.</strong>
+      </p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary btn-lg">Find a Writer 🔍</a>
+        <a href="#" class="btn-outline btn-lg">Start Earning 💸</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="1200">0</span><span>+</span>
+          <span class="stat-label">Assignments Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="850">0</span><span>+</span>
+          <span class="stat-label">Happy Students</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="320">0</span><span>+</span>
+          <span class="stat-label">Active Writers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="doodle-scene">
+        <!-- Flying papers -->
+        <div class="paper p1">📄</div>
+        <div class="paper p2">📃</div>
+        <div class="paper p3">📄</div>
+        <!-- Money floating -->
+        <div class="money m1">💸</div>
+        <div class="money m2">💰</div>
+        <div class="money m3">💵</div>
+        <!-- Main illustration -->
+        <svg class="hero-svg" viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
+          <!-- Notebook background -->
+          <rect x="60" y="40" width="280" height="300" rx="20" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8,4"/>
+          <!-- Notebook lines -->
+          <line x1="90" y1="100" x2="310" y2="100" stroke="#bbf7d0" stroke-width="1.5"/>
+          <line x1="90" y1="130" x2="310" y2="130" stroke="#bbf7d0" stroke-width="1.5"/>
+          <line x1="90" y1="160" x2="310" y2="160" stroke="#bbf7d0" stroke-width="1.5"/>
+          <line x1="90" y1="190" x2="310" y2="190" stroke="#bbf7d0" stroke-width="1.5"/>
+          <line x1="90" y1="220" x2="310" y2="220" stroke="#bbf7d0" stroke-width="1.5"/>
+          <!-- Spiral binding -->
+          <circle cx="200" cy="48" r="7" fill="#22c55e"/>
+          <circle cx="230" cy="48" r="7" fill="#22c55e"/>
+          <circle cx="170" cy="48" r="7" fill="#22c55e"/>
+          <circle cx="260" cy="48" r="7" fill="#22c55e"/>
+          <circle cx="140" cy="48" r="7" fill="#22c55e"/>
+
+          <!-- SLEEPY STUDENT (left) -->
+          <!-- Body -->
+          <ellipse cx="140" cy="270" rx="45" ry="50" fill="#fef9c3"/>
+          <!-- Head -->
+          <circle cx="140" cy="205" r="38" fill="#fde68a"/>
+          <!-- Sleepy eyes -->
+          <path d="M125 200 Q130 195 135 200" stroke="#374151" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M145 200 Q150 195 155 200" stroke="#374151" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- ZZZ -->
+          <text x="170" y="185" font-size="16" fill="#94a3b8" font-weight="bold">z</text>
+          <text x="182" y="175" font-size="20" fill="#94a3b8" font-weight="bold">z</text>
+          <text x="197" y="163" font-size="24" fill="#94a3b8" font-weight="bold">z</text>
+          <!-- Drool -->
+          <path d="M133 220 Q130 228 128 235" stroke="#93c5fd" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Cap -->
+          <ellipse cx="140" cy="172" rx="42" ry="12" fill="#15803d"/>
+          <rect x="118" y="160" width="44" height="14" rx="4" fill="#16a34a"/>
+          <rect x="155" y="157" width="12" height="6" rx="2" fill="#15803d"/>
+          <!-- Coffee cup -->
+          <rect x="100" y="295" width="28" height="22" rx="5" fill="#f97316"/>
+          <path d="M128 302 Q138 302 138 310 Q138 318 128 318" stroke="#f97316" stroke-width="2.5" fill="none"/>
+          <text x="106" y="312" font-size="10" fill="white">☕</text>
+
+          <!-- HAPPY WRITER (right) -->
+          <!-- Body -->
+          <ellipse cx="270" cy="270" rx="45" ry="50" fill="#dcfce7"/>
+          <!-- Head -->
+          <circle cx="270" cy="205" r="38" fill="#fde68a"/>
+          <!-- Happy eyes -->
+          <path d="M255 198 Q260 193 265 198" stroke="#374151" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M275 198 Q280 193 285 198" stroke="#374151" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Smile -->
+          <path d="M258 215 Q270 228 282 215" stroke="#374151" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Stars around happy student -->
+          <text x="300" y="180" font-size="14">⭐</text>
+          <text x="315" y="210" font-size="12">✨</text>
+          <text x="295" y="220" font-size="10">🌟</text>
+          <!-- Pencil in hand -->
+          <rect x="295" y="240" width="8" height="40" rx="2" fill="#fbbf24" transform="rotate(-30,299,260)"/>
+          <polygon points="303,278 299,288 295,278" fill="#f87171" transform="rotate(-30,299,260)"/>
+          <!-- Money bag -->
+          <text x="245" y="308" font-size="28">💰</text>
+
+          <!-- Assignment paper in middle -->
+          <rect x="175" y="245" width="50" height="65" rx="5" fill="white" stroke="#22c55e" stroke-width="2"/>
+          <line x1="183" y1="262" x2="217" y2="262" stroke="#d1fae5" stroke-width="1.5"/>
+          <line x1="183" y1="272" x2="217" y2="272" stroke="#d1fae5" stroke-width="1.5"/>
+          <line x1="183" y1="282" x2="217" y2="282" stroke="#d1fae5" stroke-width="1.5"/>
+          <line x1="183" y1="292" x2="210" y2="292" stroke="#d1fae5" stroke-width="1.5"/>
+          <text x="190" y="258" font-size="9" fill="#22c55e" font-weight="bold">TASK</text>
+          <text x="183" y="310" font-size="18">✅</text>
+        </svg>
+        <!-- Sticker labels -->
+        <div class="sticker sticker-1">😴 Too busy</div>
+        <div class="sticker sticker-2">💪 Got paid!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FUNNY SECTION ========== -->
+  <section class="funny-section" id="why">
+    <div class="container">
+      <div class="section-badge">🤣 Real talk</div>
+      <h2 class="section-title">Why suffer for free?</h2>
+      <p class="section-sub">Somebody's gonna do it anyway. Might as well be paid.</p>
+      <div class="funny-cards">
+        <div class="funny-card">
+          <div class="funny-icon">📚</div>
+          <p>Assignment due tomorrow</p>
+        </div>
+        <div class="funny-arrow">→</div>
+        <div class="funny-card">
+          <div class="funny-icon">😴</div>
+          <p>Sleep is more important</p>
+        </div>
+        <div class="funny-arrow">→</div>
+        <div class="funny-card">
+          <div class="funny-icon">💸</div>
+          <p>Someone gets paid</p>
+        </div>
+        <div class="funny-arrow">→</div>
+        <div class="funny-card highlight-card">
+          <div class="funny-icon">🎉</div>
+          <p>Everybody wins!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-badge">🗺️ The journey</div>
+      <h2 class="section-title">How it works</h2>
+      <p class="section-sub">So simple, even at 3AM you'll figure it out.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+              <rect x="8" y="8" width="44" height="44" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+              <text x="18" y="38" font-size="24">📝</text>
+            </svg>
+          </div>
+          <div class="step-num">01</div>
+          <h3>Post your assignment</h3>
+          <p>Describe what you need. Subject, deadline, pages. Easy peasy.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <path d="M0 10 Q15 2 30 10 Q45 18 60 10" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+            <polygon points="55,6 60,10 55,14" fill="#22c55e"/>
+          </svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+              <rect x="8" y="8" width="44" height="44" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+              <text x="18" y="38" font-size="24">🤝</text>
+            </svg>
+          </div>
+          <div class="step-num">02</div>
+          <h3>Writer accepts it</h3>
+          <p>A verified college writer picks it up. They're fast, trust me.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <path d="M0 10 Q15 2 30 10 Q45 18 60 10" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+            <polygon points="55,6 60,10 55,14" fill="#22c55e"/>
+          </svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+              <rect x="8" y="8" width="44" height="44" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+              <text x="18" y="38" font-size="24">🔒</text>
+            </svg>
+          </div>
+          <div class="step-num">03</div>
+          <h3>Payment secured</h3>
+          <p>Money is held safely until delivery. Zero ghosting allowed.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <path d="M0 10 Q15 2 30 10 Q45 18 60 10" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+            <polygon points="55,6 60,10 55,14" fill="#22c55e"/>
+          </svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+              <rect x="8" y="8" width="44" height="44" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+              <text x="18" y="38" font-size="24">🎁</text>
+            </svg>
+          </div>
+          <div class="step-num">04</div>
+          <h3>Receive it done!</h3>
+          <p>Download your assignment. Submit. Sleep. Repeat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-badge">✨ The good stuff</div>
+      <h2 class="section-title">Everything you need</h2>
+      <p class="section-sub">We thought of everything so you don't have to.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-emoji">🔐</div>
+          <h3>Secure Payments</h3>
+          <p>Your money stays safe until you're happy. No scams, no drama.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-emoji">⚡</div>
+          <h3>Fast Delivery</h3>
+          <p>Most assignments delivered before your next panic attack.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-emoji">🎓</div>
+          <h3>Verified Students</h3>
+          <p>Only real college students. College ID required. Zero randos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-emoji">🏫</div>
+          <h3>College Community</h3>
+          <p>Students helping students. That's the whole vibe here.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-emoji">💰</div>
+          <h3>Earn While Studying</h3>
+          <p>Pay your canteen bill by writing assignments. Hustler mode ON.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-emoji">📱</div>
+          <h3>Works on Mobile</h3>
+          <p>Post assignments from your bed at 2AM. We don't judge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-emoji">📋</div>
+          <div class="stat-big" data-target="1200">0</div>
+          <div class="stat-label-big">Assignments Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-emoji">😄</div>
+          <div class="stat-big" data-target="850">0</div>
+          <div class="stat-label-big">Happy Students</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-emoji">💸</div>
+          <div class="stat-big" data-target="95000">0</div>
+          <div class="stat-label-big">Money Earned (₹)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-emoji">✍️</div>
+          <div class="stat-big" data-target="320">0</div>
+          <div class="stat-label-big">Active Writers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-badge">💬 Real reviews (we promise)</div>
+      <h2 class="section-title">What students say</h2>
+      <p class="section-sub">100% real, 0% made up. Probably.</p>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"I watched Netflix while someone completed my assignment. 10/10 would recommend."</div>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">😎</div>
+            <div>
+              <div class="testi-name">Rahul K.</div>
+              <div class="testi-role">Professional Napper, CSE 3rd Year</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-quote">"Bought my weekend biryani by writing assignments. This app is literally my salary."</div>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">🤓</div>
+            <div>
+              <div class="testi-name">Priya S.</div>
+              <div class="testi-role">Top Writer, ECE 2nd Year</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"My GPA went up and my stress went down. I have no idea how this is legal but okay."</div>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">🙃</div>
+            <div>
+              <div class="testi-name">Arjun M.</div>
+              <div class="testi-role">Certified Lazy Genius, MBA 1st Year</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-doodles">
+          <span class="cta-d d1">📝</span>
+          <span class="cta-d d2">💸</span>
+          <span class="cta-d d3">🎓</span>
+          <span class="cta-d d4">⭐</span>
+        </div>
+        <h2>Ready to join the smartest lazy students?</h2>
+        <p>Sign up with your college email. It takes 30 seconds.</p>
+        <div class="cta-btns">
+          <a href="#" class="btn-primary btn-lg">Get Started Free 🚀</a>
+          <a href="#" class="btn-ghost btn-lg">I'll Write Assignments 💪</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">📝 AssignmentSides</div>
+          <p class="footer-tagline">Stop crying over assignments.<br/>Start earning from them.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="#">How It Works</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AssignmentSides. Made with ☕ and procrastination.</p>
+        <p class="footer-fun">No assignments were harmed in the making of this website. 🙏</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== LOGIN MODAL ========== -->
+  <div class="modal-overlay" id="loginModal">
+      <div class="modal-box">
+          <button class="modal-close" id="closeLogin">✕</button>
+          <div class="modal-header">
+              <div class="modal-emoji">👋</div>
+              <h2>Welcome back, champ!</h2>
+              <p>Login to your AssignmentSides account</p>
+          </div>
+          <form class="modal-form" id="loginForm">
+              <div class="form-group">
+                  <label>College ID 🎓</label>
+                  <input type="text" id="loginCollegeId" placeholder="e.g. CS2021001" required />
+              </div>
+              <div class="form-group">
+                  <label>Password 🔒</label>
+                  <input type="password" id="loginPassword" placeholder="Your secret password" required />
+              </div>
+              <div class="form-msg" id="loginMsg"></div>
+              <button type="submit" class="btn-primary btn-full">Login 🚀</button>
+              <p class="modal-switch">
+                  New here? <span class="switch-link" id="goToRegister">Sign up free →</span>
+              </p>
+          </form>
+      </div>
+  </div>
+
+  <!-- ========== REGISTER MODAL ========== -->
+  <div class="modal-overlay" id="registerModal">
+      <div class="modal-box modal-box-lg">
+          <button class="modal-close" id="closeRegister">✕</button>
+          <div class="modal-header">
+              <div class="modal-emoji">🎉</div>
+              <h2>Join AssignmentSides!</h2>
+              <p>Create your account with your college email</p>
+          </div>
+          <form class="modal-form" id="registerForm">
+              <div class="form-row">
+                  <div class="form-group">
+                      <label>Full Name ✍️</label>
+                      <input type="text" id="regFullName" placeholder="Your full name" required />
+                  </div>
+                  <div class="form-group">
+                      <label>College ID 🎓</label>
+                      <input type="text" id="regCollegeId" placeholder="e.g. CS2021001" required />
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>College Email 📧</label>
+                  <input type="email" id="regEmail" placeholder="you@gita.edu.in" required />
+                  <span class="form-hint">Only college email addresses are accepted</span>
+              </div>
+              <div class="form-row">
+                  <div class="form-group">
+                      <label>Department 🏫</label>
+                      <select id="regDepartment" required>
+                          <option value="">Select department</option>
+                          <option>Computer Science</option>
+                          <option>Electronics</option>
+                          <option>Mechanical</option>
+                          <option>Civil</option>
+                          <option>MBA</option>
+                          <option>Other</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label>I want to... 🎯</label>
+                      <select id="regRole" required>
+                          <option value="">Select role</option>
+                          <option value="REQUESTER">Find a Writer 📚</option>
+                          <option value="WRITER">Earn by Writing 💸</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Password 🔒</label>
+                  <input type="password" id="regPassword" placeholder="Make it strong!" required />
+              </div>
+              <div class="form-msg" id="registerMsg"></div>
+              <button type="submit" class="btn-primary btn-full">Create Account 🎉</button>
+              <p class="modal-switch">
+                  Already have account? <span class="switch-link" id="goToLogin">Login →</span>
+              </p>
+          </form>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

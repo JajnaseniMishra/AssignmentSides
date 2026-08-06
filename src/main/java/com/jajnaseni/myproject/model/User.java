@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class User {
 
     @Id
-    @Column(name = "college_id", nullable = false, unique = true)
+    @Column(name = "college_id", nullable = false, unique = true, length = 20)
     private String collegeId;        // e.g. "CS2021001" — not auto-generated
 
     @Column(name = "full_name", nullable = false)

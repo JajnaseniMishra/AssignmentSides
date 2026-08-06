@@ -1,45 +1,51 @@
 package com.jajnaseni.myproject.service;
+
 import com.jajnaseni.myproject.model.User;
 import com.jajnaseni.myproject.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
-    @Service
-    public class userService {
+@Service
+public class UserService {
 
-        @Autowired
-        private UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
-        // ── Register a new user (works for both Requester & Writer) ──
-        public String registerUser(User user) {
+    // ── Register a new user (works for both Requester & Writer) ──
+    public String registerUser(User user) {
 
-            // Check if college ID already exists
-            if (userRepository.existsByCollegeId(user.getCollegeId())) {
-                return "College ID already registered!";
-            }
-
-            // Check if email already exists
-            if (userRepository.existsByEmail(user.getEmail())) {
-                return "Email already registered!";
-            }
-
-            userRepository.save(user);
-            return "User registered successfully!";
+        // Check if email belongs to your college
+        if (!user.getEmail().endsWith("@gita.edu.in")) {
+            return "Registration failed! Only GITA college email addresses are allowed.";
         }
 
-        // ── Get user by college ID ──
-        public User getUserById(String collegeId) {
-            return userRepository.findByCollegeId(collegeId);
+        // Check if college ID already exists
+        if (userRepository.existsByCollegeId(user.getCollegeId())) {
+            return "College ID already registered!";
         }
 
-        // ── Get user by email (for login later) ──
-        public User getUserByEmail(String email) {
-            return userRepository.findByEmail(email);
+        // Check if email already exists
+        if (userRepository.existsByEmail(user.getEmail())) {
+            return "Email already registered!";
         }
 
-        // ── Get all users ──
-        public java.util.List<User> getAllUsers() {
-            return userRepository.findAll();
-        }
+        userRepository.save(user);
+        return "User registered successfully!";
     }
 
+    // ── Get user by college ID ──
+    public User getUserById(String collegeId) {
+        return userRepository.findByCollegeId(collegeId);
+    }
+
+    // ── Get user by email (for login later) ──
+    public User getUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    // ── Get all users ──
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+}

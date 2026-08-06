@@ -1,0 +1,50 @@
+POST http://localhost:8081/api/users/register
+Content-Type: application/json
+
+{
+    "collegeId": "CS001",
+    "fullName": "Jajnaseni Mishra",
+    "email": "jajnaseni@gita.edu.in",
+    "department": "CSE",
+    "password": "jm2005",
+    "role": "REQUESTER"
+}
+POST http://localhost:8081/api/users/register
+Content-Type: application/json
+
+{
+    "collegeId": "CS001",
+    "fullName": "Jajnaseni Mishra",
+    "email": "jajnaseni@gita.edu.in",
+    "department": "CSE",
+    "password": "jm2005",
+    "role": "REQUESTER"
+}
+
+###
+
+POST http://localhost:8081/api/users/register
+Content-Type: application/json
+
+{
+    "collegeId": "CS002",
+    "fullName": "Test User",
+    "email": "test@gmail.com",
+    "department": "CSE",
+    "password": "test123",
+    "role": "WRITER"
+}
+
+###
+
+POST http://localhost:8081/api/users/register
+Content-Type: application/json
+
+{
+    "collegeId": "CS001",
+    "fullName": "Duplicate Test",
+    "email": "duplicate@gita.edu.in",
+    "department": "CSE",
+    "password": "test123",
+    "role": "REQUESTER"
+}

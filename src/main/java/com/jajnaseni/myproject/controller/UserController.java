@@ -1,7 +1,7 @@
 package com.jajnaseni.myproject.controller;
 
 import com.jajnaseni.myproject.model.User;
-import com.jajnaseni.myproject.service.userService;
+import com.jajnaseni.myproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private userService userService;
+    private UserService userService;
 
     // ── Register a new user (Requester or Writer) ──
     @PostMapping("/register")
